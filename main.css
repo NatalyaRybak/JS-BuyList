@@ -1,3 +1,86 @@
-h1 {
-    color: red;
+.bl-background{
+    background-color: aquamarine;
+}
+.bl-list{
+    width:	40%;
+    height:	300px;
+    margin:	25px;
+
+    position: fixed;
+    left: 20%;
+    float: left;
+    font-size: 16px;
+    font-family: Arial;
+
+}
+input{
+    border-radius: 5px;
+}
+.search{
+    border-top: 1px solid dimgray;
+    border-left:	1px solid dimgray;
+    border-right:	1px solid dimgray;
+padding: 5px;
+}
+.bl-row{
+
+    padding: 5px;
+    border-top: 1px solid dimgray;
+    border-left:	1px solid dimgray;
+    border-right:	1px solid dimgray;
+
+    /* border-top: 1px solid dimgray;*/
+}
+.bl-row:last-child{
+    border-bottom: 1px solid dimgray;;
+}
+.bl-buttons{
+    float: right;
+}
+.bl-count{
+    width: 28%;
+    text-align: center;
+}
+.bl-count .bl-minus, .bl-plus{
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+.bl-count .bl-minus {
+    color: crimson;
+}
+.bl-plus{
+    color: forestgreen;
+}
+.bl-buttons .notBought{
+border-radius: 5px;
+    width: 30px;
+    height: 30px;
+
+}
+.bl-buttons .bought{
+    height: 30px;
+    border-radius: 5px;
+
+}
+.secondTable{
+    position: fixed;
+    right: 20%;
+    width:	15%;
+    height:	50px;
+    margin:	25px;
+    float: left;
+    font-size: 16px;
+    font-family: Arial;
+}
+.secondTable .bl-title:first-child{
+    border-top:  1px solid dimgray;
+}
+.secondTable .bl-title{
+    border-bottom: 1px solid dimgray;
+    border-left:	1px solid dimgray;
+    border-right:	1px solid dimgray;
+
+    padding: 5px;
 }
