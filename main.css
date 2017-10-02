@@ -6,28 +6,79 @@
     left: 0;
     position: fixed;
     overflow: auto;
+    display: inline-block;
 }
 
 .bl-list{
-    width:	40%;
+    width:	60%;
     height:	auto;
-    margin:	25px;
+    margin:	10px;
     background-color: white;
     position: fixed;
-    left: 20%;
+    left: 5%;
     float: left;
     font-size: 16px;
     font-family: Arial;
 
 }
+
+.bl-bought{
+    background-color: white;
+    position: fixed;
+    right: 10%;
+    width:	22%;
+    height:	auto;
+    margin:	10px;
+    font-size: 16px;
+    font-family: Arial
+
+}
+.bl-list,.bl-bought{
+    box-sizing: border-box;
+}
+
+@media(max-width: 500px) {
+    .bl-list{
+        width: 100%;
+    }
+    .bl-bought {
+        width: 100%;
+    }
+}
 input{
     border-radius: 5px;
 }
 .search{
+    box-sizing: inherit;
+    display: flex;
     border-top: 1px solid dimgray;
     border-left:	1px solid dimgray;
     border-right:	1px solid dimgray;
-padding: 5px;
+     padding: 5px;
+}
+.searchForm{
+    width: 80%;
+    height: 30px;
+}
+.add{
+    width: 20%;
+    height: 30px;
+    border-radius: 3px;
+    background: rgba(57,85,216,0.89);
+    box-shadow: 0 -3px rgba(37,36,203,0.89)inset;
+}
+.searchForm,.add{
+    box-sizing: border-box;
+}
+.bl-bought .bl-title:first-child{
+    border-top:  1px solid dimgray;
+}
+.bl-bought .bl-title{
+    border-bottom: 1px solid dimgray;
+    border-left:	1px solid dimgray;
+    border-right:	1px solid dimgray;
+
+    padding: 5px;
 }
 .bl-row{
 
@@ -72,25 +123,4 @@ border-radius: 5px;
     height: 30px;
     border-radius: 5px;
 
-}
-.secondTable{
-    background-color: white;
-    position: fixed;
-    right: 20%;
-    width:	15%;
-    height:	auto;
-    margin:	25px;
-    float: left;
-    font-size: 16px;
-    font-family: Arial;
-}
-.secondTable .bl-title:first-child{
-    border-top:  1px solid dimgray;
-}
-.secondTable .bl-title{
-    border-bottom: 1px solid dimgray;
-    border-left:	1px solid dimgray;
-    border-right:	1px solid dimgray;
-
-    padding: 5px;
 }
