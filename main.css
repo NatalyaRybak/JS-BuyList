@@ -13,16 +13,17 @@
 .container {
     width: 100%;
     height: 100%;
+    max-width: 1200px;
     padding-top: 100px;
     margin-right: auto;
     margin-left: auto;
     box-sizing: border-box;
 }
 .bl-list{
-    width:50%;
+    width:64%;
     min-width: 600px;
     background-color: white;
-    left: 5%;
+    /*left: 5%;*/
     flex-direction: column;
     float: left;
     margin: 14px;
@@ -52,7 +53,7 @@
 }
 .bl-row{
     width:100%;
-    height: 50px;
+    min-height: 60px;
     border-top: 1px solid rgba(34,36,38,.15);
 }
 
@@ -69,7 +70,7 @@ input{
 }
 .search{
     width:100%;
-    height: 40px;
+    height: 50px;
     box-sizing: inherit;
     display: flex;
     padding: 14px;
@@ -90,19 +91,25 @@ input{
 }
 .searchForm.add{
     box-sizing: border-box;
-}
-.bl-title,.row{
-    border-bottom: 1px solid rgba(34,36,38,.15);;
-    padding: 14px;
-    height: 20px;
+
 }
 
+.bl-title,.bl-left{
+    border-bottom: 1px solid rgba(34,36,38,.15);;
+    padding: 14px;
+    height: auto;
+    display: block;
+    height: auto;
+    min-height: 40px;
+
+}
 .bl-final{
     padding: 14px;
 }
+
 .bl-label{
     padding: 10px;
-    background-color:rgba(149,152,157,0.42);
+    background-color:#E8E8E8;
     border-radius: 5px;
     padding-top: 7px;
     padding-bottom: 7px;
@@ -133,7 +140,9 @@ border-radius: 5px;
 
 }
 .bl-buttons .bought{
-    height: 30px;
+    height: 40px;
+    width: 90px;
+
     border-radius: 5px;
 }
 
@@ -149,7 +158,7 @@ border-radius: 5px;
      text-align: center;
     padding-left: 14px;
     padding-right: 14px;
-    padding-top: 7px;
+    padding-top: 14px;
 
 }
 .bl-buttons{
@@ -184,24 +193,44 @@ border-radius: 5px;
 
 .badge{
     position: fixed;
-    width: 80px;
-    height: 90px;
+    width: 100px;
+    height: 70px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     background-color: rgba(153,54,203,0.89);
    /* margin-top: 300px;*/
-    bottom: -70px;
+    padding-top: 10px;
+    bottom: -50px;
     margin-left: 50px;
     text-align: center;
     transition: all 1s ease;
 }
 .badge:hover{
     bottom: -10px;
+    background-color: blue;
 
 }
 .buy-list{
     font-size: 14px;
     color: white;
+}
+
+@media print {
+    .badge{
+     background-color: white;
+     border: 1px solid darkmagenta;
+     color: black;
+        bottom: 10px;
+    }
+    .buy-list{
+        display: none;
+        visibility: hidden;
+    }
+    .created-by{
+        padding-top: 20;
+        color: black;
+    }
+
 }
 
 button[data-tooltip]:hover::before{
@@ -210,9 +239,12 @@ button[data-tooltip]:hover::before{
     visibility: visible;
     border-radius: 5px;
     color: white;
+    transition:all 0.5s ease-in-out;
+    transform: scale(1);
 
 }
 button[data-tooltip]::before{
+    color: white;
     visibility: hidden;
     display: inline-block;
     position: fixed;
@@ -221,4 +253,6 @@ button[data-tooltip]::before{
     margin-top: -35px;
     margin-left: -30px;
     opasity:0;
+    transition: all 0.5s ease;
+    transform: scale(0);
 }
