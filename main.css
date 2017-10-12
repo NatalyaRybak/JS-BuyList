@@ -75,6 +75,8 @@ input{
     height: auto;
     }
 .add{
+    font-style: normal;
+    font-weight: 700;
     width: 15%;
     border: none;
     height: auto;
@@ -149,6 +151,8 @@ border-radius: 5px;
 
 }
 .bl-buttons .bought{
+    font-style: normal;
+    font-weight: 700;
     height: 40px;
     width: 90px;
     border: none;
@@ -158,6 +162,8 @@ border-radius: 5px;
     border-radius: 5px;
 }
 .bl-buttons .unbought{
+    font-style: normal;
+    font-weight: 700;
     height: 40px;
     width: 90px;
     border: none;
@@ -224,7 +230,6 @@ border-radius: 5px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     background-color: rgba(153,54,203,0.89);
-   /* margin-top: 300px;*/
     padding-top: 10px;
     bottom: -50px;
     margin-left: 50px;
