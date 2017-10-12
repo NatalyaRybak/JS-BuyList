@@ -172,7 +172,7 @@ border-radius: 5px;
     font-weight: 700;
 }
 
-.bl-product{
+.bl-product,.bl-name{
     float:left;
     width:20%;
     padding: 14px;
@@ -289,20 +289,40 @@ button[data-tooltip]::before{
 .bl-row .unbought button{
     display: none;
 }
+.bl-name {
+    width: 20%;
+    height: auto;
+    display: inline-block;
+}
+.bl-item {
+    font: normal 14px "Calibri";
+    background-color: #d7d5d5;
+    border-radius: 5px;
+    float: left;
+    margin: 5px;
+    padding: 5px;
+    display: inline-block;
 
-.bl-row.is-bought .unbought{
-    display: inline;
 }
-.bl-row.is-bought .bl-product{
-    text-decoration: line-through;
+
+.bl-text {
+    text-align: left;
+    display: inline-block;
 }
-.bl-row.is-bought .bl-buttons .bought,
-.bl-row.is-bought .bl-buttons .bl-delete{
-    display: none;
-}
-.bl-row.is-bought .bl-count .bl-minus{
-   filter: opacity(30%);
-}
-.bl-row.is-bought .bl-count .bl-plus {
-    filter: opacity(30%);
+
+.bl-number {
+    text-align: center;
+    display: inline-block;
+    text-align: center;
+    padding: 0;
+    margin: auto;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+
+    color: white;
+    background-color: darkorange;
+
+    border-radius: 10px;
+
 }

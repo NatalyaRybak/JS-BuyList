@@ -17,21 +17,8 @@
                 <input class="addForm" type="text" size="75" placeholder=" Назва товару" >
                 <button class = "add" data-tooltip="Додати товар">Додати</button>
             </div>
-            <div class="bl-count">
-                <button class="bl-minus" data-tooltip="Зменшити к-сть">-</button>
-                <span class="bl-label">1</span>
-                <button class="bl-plus"data-tooltip="Збільшити к-сь">+</button>
             </div>
-
-            <div class="bl-buttons">
-               <button class = "bought"data-tooltip="Куплено">Куплено</button>
-                <button class="unbought" data-tooltip="Не куплено">Не куплено</button>
-                <button class = "bl-delete"data-tooltip="Прибрати">x</button>
-            </div>
-            </div>
-            </div>
-        </div>
-    <div class="one-row-template" style="display: none;">
+    <div class="one-row-template" style="display: none">
         <div class="bl-row" >
             <div class="bl-product"></div>
             <input class="bl-name">
@@ -48,72 +35,33 @@
             </div>
         </div>
     </div>
-
-    <div class = "bl-bought">
-            <div class="bl-title">Залишилося</div>
-                <div class="bl-left">
-                    <div class="item">
-                    <span class="name">Помідори</span>
-                    <span class="n">1</span>
-                   </div>
-                     <div class="item">
-                    <span class="name">Печиво</span>
-                    <span class="n">1</span>
-                     </div>
-                     <div class="item">
-                     <span class="name">Сир</span>
-                     <span class="n">1</span>
-                    </div>
-                </div>
-            <div class="bl-title">Куплене</div>
-            <div class="bl-final"></div>
+    <div class="final-template" style="display: none;">
+        <div class="bl-item">
+            <div class="bl-text"></div>
+            <div class="bl-number"></div>
         </div>
-   </div>
+    </div>
+    <div class="left-template" style="display: none;">
+        <div class="bl-item">
+            <div class="bl-text" style="text-decoration: line-through;"></div>
+            <div class="bl-number"></div>
+        </div>
+    </div>
+    <div class = "bl-bought">
+        <div class="bl-title">Залишилося</div>
+        <div class="bl-left"></div>
+        <div class="bl-title">Куплене</div>
+        <div class="bl-final"></div>
+    </div>
+</div>
     <div class="badge">
         <span class="buy-list">Buy List</span>
         <span class="created-by">Created by: <span class="name">Natalya Rybak</span>
-        </span></div>
+        </span>
+    </div>
 </div>
-
-
-</div>
-
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"> </script>
-<script type="text/javascript" src="main.js"> </script>
+<script type="text/javascript" src="jquery-2.1.4.min.js"> </script>
+<script type="text/javascript" src="main.js" ></script>
 
 </body>
 </html>
-<!--<div class="bl-row">-->
-<!--<div class="bl-product">-->
-<!--Печиво-->
-<!--</div>-->
-
-<!--<div class="bl-count">-->
-<!--<button class="bl-minus" data-tooltip="Зменшити к-сть">-</button>-->
-<!--<span class="bl-label">1</span>-->
-<!--<button class="bl-plus"data-tooltip="Збільшити к-сь">+</button>-->
-<!--</div>-->
-
-<!--<div class="bl-buttons">-->
-<!--<button class = "bought"data-tooltip="Куплено">Куплено</button>-->
-<!--<button class="unbought" data-tooltip="Не куплено">Не куплено</button>-->
-<!--<button class = "bl-delete"data-tooltip="Прибрати">x</button>-->
-<!--</div>-->
-<!--</div>-->
-<!--<div class="bl-row">-->
-<!--<div class="bl-product">-->
-<!--Сир-->
-<!--</div>-->
-
-<!--<div class="bl-count">-->
-<!--<button class="bl-minus" data-tooltip="Зменшити к-сть">-</button>-->
-<!--<span class="bl-label">1</span>-->
-<!--<button class="bl-plus"data-tooltip="Збільшити к-сть">+</button>-->
-<!--</div>-->
-
-<!--<div class="bl-buttons">-->
-<!--<button class = "bought"data-tooltip="Куплено">Куплено</button>-->
-<!--<button class="unbought" data-tooltip="Не куплено">Не куплено</button>-->
-<!--<button class = "bl-delete"data-tooltip="Прибрати">x</button>-->
-<!--</div>-->
-<!--</div>-->
