@@ -13,7 +13,7 @@
 .container {
     width: 100%;
     height: 100%;
-    max-width: 1200px;
+    max-width: 1000px;
     padding-top: 100px;
     margin-right: auto;
     margin-left: auto;
@@ -25,15 +25,15 @@
     background-color: white;
     flex-direction: column;
     float: left;
-    margin: 14px;
+    margin: 1%;
 }
 
 .bl-bought{
     background-color: white;
     right: 10%;
-    width:30%;
+    width:300px;
     flex-direction: column;
-    margin: 14px;
+    margin: 1%;
     float: left;
 }
 
@@ -52,7 +52,7 @@
     border-top: 1px solid rgba(34,36,38,.15);
 }
 
-@media(max-width: 900px) {
+@media(max-width: 500px) {
     .bl-list{
         width: 100%;
     }
@@ -94,11 +94,6 @@ input{
 .bl-title,.bl-left{
     border-bottom: 1px solid rgba(34,36,38,.15);;
     padding: 14px;
-    height: auto;
-    display: block;
-    height: auto;
-    min-height: 40px;
-
 }
 .bl-final{
     padding: 14px;
@@ -144,7 +139,6 @@ border-radius: 5px;
     height: 38px;
     color: white;
     background-color: crimson;
-    border-color: crimson;
     border: none;
     box-shadow: 0 0 0 1px rgba(34,36,38,.15) inset, 0 -0.3em 0 0 rgba(34,36,38,.15) inset;
     /*background: linear-gradient(transparent,crimson) #F8F8F8;*/
@@ -203,16 +197,51 @@ border-radius: 5px;
 
 }
 
-.item{
+.add:active {
+    outline: none;
+    background-color: #4173bb;
+}
+
+.add::after {
+    background-color: rebeccapurple;
+    border-radius: 5px;
+    width: 150px;
+    height: 25px;
+    margin-top: -25px;
+    margin-left: -110px;
+
+    padding: 5px;
+    color: white;
+
+    font: 17px "Calibri";
+    content: attr(data-tooltip);
+    opacity: 0;
+    position: absolute;
+    visibility: hidden;
+    transform: scale(0.2);
+    transition: all 0.2s ease-in-out;
+
+}
+
+.add:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-30px) scale(1);
+}
+.bl-item{
+    font: normal 14px "Calibri";
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    margin: 2px;
     background-color: #d7d5d5;
     border-radius: 5px;
-    float: left;
-    margin: 5px;
-    padding: 5px;
-    display: inline-block;
 }
-.name{
-    font-size: 14px;
+.name,.created-by{
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
 }
 .n{
     font-size: 14px;
@@ -226,12 +255,12 @@ border-radius: 5px;
 .badge{
     position: fixed;
     width: 100px;
-    height: 70px;
+    height: 100px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     background-color: rgba(153,54,203,0.89);
     padding-top: 10px;
-    bottom: -50px;
+    bottom: -80px;
     margin-left: 50px;
     text-align: center;
     transition: all 1s ease;
@@ -242,7 +271,10 @@ border-radius: 5px;
 
 }
 .buy-list{
-    font-size: 14px;
+  font-family: Arial;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 700;
     color: white;
 }
 
@@ -298,16 +330,6 @@ button[data-tooltip]::before{
     width: 20%;
     height: auto;
     display: inline-block;
-}
-.bl-item {
-    font: normal 14px "Calibri";
-    background-color: #d7d5d5;
-    border-radius: 5px;
-    float: left;
-    margin: 5px;
-    padding: 5px;
-    display: inline-block;
-
 }
 
 .bl-text {
